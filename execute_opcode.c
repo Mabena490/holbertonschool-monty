@@ -30,13 +30,13 @@ if (strcmp(opcode_func[i].opcode, op_code) == 0)
 {
 opcode_func[i].f(&var.stack_head, var.n_lines);
 return;
-	}
-      i++;
-    }
-  fprintf(stderr, "L%u: unknown instruction %s\n", var.n_lines, op_code);
-  free(var.getl_info);
-  handle_dlist_head(var.stack_head);
-  fclose(var.fp_struct);
-  exit(EXIT_FAILURE);
+}
+i++;
+}
+fprintf(stderr, "L%u: unknown instruction %s\n", var.n_lines, op_code);
+free(var.getl_info);
+handle_dlist_head(var.stack_head);
+fclose(var.fp_struct);
+exit(EXIT_FAILURE);
 }
 

@@ -10,14 +10,14 @@ int line_validator(char *str)
 {
   int index = 0, flag = 0, len = 0;
 
-  len = strlen(str);
-  while (str[index] == ' ' || str[index] == '\t' || str[index] == '\n')
-    {
-      index++;
-    }
+len = strlen(str);
+while (str[index] == ' ' || str[index] == '\t' || str[index] == '\n')
+{
+index++;
+}
 
-  if (index == len)
-    flag = 1;
+if (index == len)
+flag = 1;
 
   return (flag);
 }
