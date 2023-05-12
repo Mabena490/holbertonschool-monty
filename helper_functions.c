@@ -30,9 +30,9 @@ return (flag);
  */
 void is_digit(char *number)
 {
-  unsigned int i = 0;
+unsigned int i = 0;
 
-  if (number == NULL)
+if (number == NULL)
 {
 fprintf(stderr, "L%u: usage: push integer\n", var.n_lines);
 free(var.getl_info);
