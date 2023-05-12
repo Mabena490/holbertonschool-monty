@@ -21,7 +21,7 @@ free(var.getl_info);
 fclose(var.fp_struct);
 fprintf(stderr, "L%u: can't div, stack too short\n", var.n_lines);
 exit(EXIT_FAILURE);
-    }
+}
 if ((*stack)->next->n == 0)
 {
 handle_dlist_head(var.stack_head);

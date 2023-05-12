@@ -21,7 +21,7 @@ free(var.getl_info);
 fclose(var.fp_struct);
 fprintf(stderr, "L%u: can't add, stack too short\n", var.n_lines);
 exit(EXIT_FAILURE);
-    }
+}
 if (*stack != NULL)
 {
 *stack = (*stack)->next;
@@ -53,7 +53,7 @@ line_number = line_number;
  */
 void op_pop(stack_t **stack, unsigned int line_number)
 {
-  stack_t *temp = *stack;
+stack_t *temp = *stack;
 
 line_number = line_number;
 if (temp == NULL)
